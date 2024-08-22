@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bumptech.glide.Glide
-import com.example.westwork6.R.*
+import com.example.westwork6.R.id
+import com.example.westwork6.R.layout
 
 class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener {
 
@@ -50,7 +50,6 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener {
         // 设置刷新图标的颜色，传入资源 ID
         swipeRefreshLayout.setColorSchemeResources(R.color.red, R.color.blue, R.color.green)
 
-        // 设置刷新图标的背景颜色
         swipeRefreshLayout.setProgressBackgroundColorSchemeResource(R.color.white)
 
         // 设置监听器, 需要重写 onRefresh() 方法
